@@ -5,10 +5,10 @@ function Header() {
         <header className={Styles.header}>
             <h1>Travel agency</h1>
             <nav className={Styles.nav}>
-                <NavLink to="/" className={({isActive})=>isActive ? Styles.active:""}>Accueil</NavLink>
-                <NavLink to="/" className={({isActive})=>isActive ? Styles.active:""}>Destinations</NavLink>
-                <NavLink to="/" className={({isActive})=>isActive ? Styles.active:""}>Contact</NavLink>
-
+                <NavLink to="/" end className={({ isActive }) => isActive ? Styles.active : ""}>Accueil</NavLink>
+                <NavLink to="/destinations" className={({ isActive }) => isActive ? Styles.active : ""}>Destinations</NavLink>
+                <NavLink to="/apropos" className={({ isActive }) => isActive ? Styles.active : ""}>À propos</NavLink>
+                <NavLink to="/reservation" className={({ isActive }) => isActive ? Styles.active : ""}>Réservation</NavLink>
             </nav>
         </header>
     )

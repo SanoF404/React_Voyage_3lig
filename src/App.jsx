@@ -3,7 +3,7 @@ import "./App.css";
 import Accueil from "./components/Acceuil/Acceuil";
 import Apropos from "./components/Apropos/Apropos";
 import Destinations from "./components/Destinations/Destinations";
-import Reservation from "./components/Reservation/Reservation"
+import Reservation from "./components/Reservation/Reservation";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Login from "./components/Login/Login";
@@ -18,7 +18,7 @@ function App() {
           <Route path="/apropos" element={<Apropos />} />
           <Route path="/destinations" element={<Destinations />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/exemple" element={<Reservation />} />
+          <Route path="/reservation" element={<Reservation />} />
         </Routes>
         <Footer />
       </div>
